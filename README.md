@@ -1,7 +1,7 @@
 
 # 🌉 StructurSense: The Infrastructure Guardian
 
-**Winner/Entry: Best Use of Gemini API - AI x WiC x SASE Hackathon**
+**Best Use of Gemini API - AI x WiC x SASE Hackathon**
 
 StructurSense is an AI-driven, web-based dashboard designed to promote a human-centered approach to infrastructure maintenance. By leveraging the **Google Gemini 2.5 Flash API**, this tool allows civil engineers and inspectors to upload images of infrastructure (concrete pillars, road surfaces, steel girders) and instantly receive a preliminary structural health and safety assessment.
 
