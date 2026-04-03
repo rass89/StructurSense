@@ -21,7 +21,7 @@ StructurSense is an AI-driven, web-based dashboard designed to promote a human-c
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/rass89/StructurSense.git](https://github.com/rass89/StructurSense.git)
+   git clone https://github.com/rass89/StructurSense.git
    cd StructurSense
 
 
@@ -30,7 +30,7 @@ StructurSense is an AI-driven, web-based dashboard designed to promote a human-c
 
 2. Create a virtual environment & install dependencies:
 
-Bash:
+```bash
 python3 -m venv my_env
 source my_env/bin/activate
 pip install streamlit google-generativeai pillow
@@ -39,7 +39,7 @@ Open app.py and replace "YOUR_API_KEY_HERE" with your actual Google AI Studio ke
 
 3. Launch the app:
 
-Bash:
+```bash
 streamlit run app.py
 
 -------------------------------------
