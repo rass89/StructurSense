@@ -2,9 +2,9 @@ YOUR_API_KEYimport streamlit as st
 import google.generativeai as genai
 from PIL import Image
 
-# ==========================================
+
 # 1. API Configuration
-# ==========================================
+
 # Get your API key from Google AI Studio and paste it here
 API_KEY = "YOUR_API_KEY" 
 genai.configure(api_key=API_KEY)
@@ -12,9 +12,9 @@ genai.configure(api_key=API_KEY)
 # Use the Flash model for fast, multimodal responses
 model = genai.GenerativeModel('gemini-2.5-flash')
 
-# ==========================================
+
 # 2. Page Setup & UI
-# ==========================================
+
 st.set_page_config(page_title="StructurSense AI", layout="wide")
 
 st.title("🌉 StructurSense: The Infrastructure Guardian")
@@ -23,9 +23,9 @@ Upload an image of a structural element (concrete pillar, steel girder, bridge d
 Our Gemini-powered multimodal AI will scan for distress indicators like fatigue cracking, spalling, and corrosion, generating an instant safety report.
 """)
 
-# ==========================================
+
 # 3. Image Upload Module
-# ==========================================
+
 uploaded_file = st.file_uploader("Upload Inspection Photo (JPG, PNG)", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
@@ -33,9 +33,9 @@ if uploaded_file is not None:
     image = Image.open(uploaded_file)
     st.image(image, caption="Uploaded Infrastructure Photo", use_container_width=True)
     
-    # ==========================================
+
 # 4. The Engineering Prompt
-# ==========================================
+
     # This prompt forces Gemini to act as a domain expert
     inspection_prompt = """
     You are an expert structural engineer specializing in Structural Health Monitoring (SHM). 
@@ -57,9 +57,9 @@ if uploaded_file is not None:
     Suggest the immediate next steps (e.g., routine monitoring, human-centered manual inspection, immediate closure).
     """
 
-    # ==========================================
+
 # 5. Gemini API Call & Display
-# ==========================================
+
     if st.button("Run AI Structural Analysis"):
         with st.spinner("Analyzing structural integrity..."):
             try:
