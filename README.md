@@ -1,3 +1,50 @@
+
+# 🌉 StructurSense: The Infrastructure Guardian
+
+**Winner/Entry: Best Use of Gemini API - AI x WiC x SASE Hackathon**
+
+StructurSense is an AI-driven, web-based dashboard designed to promote a human-centered approach to infrastructure maintenance. By leveraging the **Google Gemini 2.5 Flash API**, this tool allows civil engineers and inspectors to upload images of infrastructure (concrete pillars, road surfaces, steel girders) and instantly receive a preliminary structural health and safety assessment.
+
+## 🚀 Features
+* **Multimodal AI Analysis:** Uses Gemini Vision to identify surface-level distress such as concrete spalling, exposed rebar, fatigue cracking, and steel corrosion.
+* **Severity Assessment:** Automatically grades the damage (Low, Moderate, High, Critical) based on visual evidence.
+* **Conceptual Damage Index (D):** Calculates a theoretical risk score to prioritize maintenance.
+* **Frictionless UI:** Built entirely in Python using Streamlit for instant deployment and easy image uploading.
+
+## 🛠️ Built With
+* Python 3
+* [Google Gemini API](https://aistudio.google.com/) (`gemini-2.5-flash`)
+* Streamlit
+* Pillow (PIL)
+
+## 💻 How to Run Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/rass89/StructurSense.git](https://github.com/rass89/StructurSense.git)
+   cd StructurSense
+
+
+-------------------------------------
+-------------------------------------
+
+2. Create a virtual environment & install dependencies:
+
+Bash:
+python3 -m venv my_env
+source my_env/bin/activate
+pip install streamlit google-generativeai pillow
+Add your API Key:
+Open app.py and replace "YOUR_API_KEY_HERE" with your actual Google AI Studio key.
+
+3. Launch the app:
+
+Bash:
+streamlit run app.py
+
+-------------------------------------
+-------------------------------------
+
 Inspiration:
 Current structural inspections often put engineers in dangerous, hard-to-reach environments. The inspiration behind StructurSense is to promote a human-centered approach to infrastructure maintenance. By using AI as a reliable assistant, we can analyze visual data before a human ever has to climb a bridge or scaffold. The goal is to keep inspectors safer and make the preliminary assessment process much faster and more accessible.
 
